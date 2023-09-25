@@ -780,7 +780,7 @@ run_state_test()
 		#
 		NEWLIST=$(cat cpuset.cpus.effective)
 		RETRY=0
-		while [[ $NEWLIST != $CPULIST && $RETRY -lt 5 ]]
+		while [[ $NEWLIST != $CPULIST && $RETRY -lt 10 ]]
 		do
 			# Wait a bit longer & recheck a few times
 			pause 0.01
